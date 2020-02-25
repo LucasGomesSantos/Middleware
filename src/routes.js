@@ -5,6 +5,7 @@ const projecontroller = require('./controller/projectController')
 
 routes.get('/project', projecontroller.index);
 routes.post('/project', projecontroller.store);
+routes.post('/project', projecontroller.tasks);
 routes.get('/project/:id', projecontroller.show);
 routes.put('/project/:id', projecontroller.update)
 routes.delete('/project/:id', projecontroller.destroy)
